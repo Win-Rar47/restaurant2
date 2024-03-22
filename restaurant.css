@@ -1,0 +1,496 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container nav {
+  margin-top: 20px;
+}
+.container nav a.navbar-brand {
+  color: white;
+  font-weight: bold;
+  margin: 0;
+}
+
+.navbar-collapse {
+  margin-left: 10px;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+ul li {
+  display: inline-block;
+  position: relative;
+}
+ul li button {
+  font-size: 12px;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+ul li ul.dropdown {
+  text-align: justify;
+  padding: 0;
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 50px;
+  z-index: 999;
+}
+ul li:hover ul.dropdown {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+}
+ul .nav-link {
+  font-size: 12px;
+  color: white;
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+}
+
+.btn-order {
+  margin-left: 1%;
+  width: 150px;
+  height: 40px;
+  background-color: rgb(120, 200, 90);
+  border-radius: 20px;
+  border: none;
+  color: white;
+}
+
+.btn-order:hover {
+  background-color: rgb(130, 240, 100);
+}
+
+.btn-order:active {
+  background-color: rgba(46, 214, 69, 0.658);
+}
+
+.btn-shop {
+  margin-right: 8px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search {
+  border: none;
+  height: 30px;
+  border-radius: 20px;
+}
+
+.background-head {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/f55c87d06a345e9c94021f3e/3007283.jpg);
+}
+
+.box-header {
+  min-width: 320px;
+  height: 40%;
+  margin-top: 12%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  flex-direction: column;
+}
+.box-header h3 {
+  font-family: "Comforter";
+  font-size: 35px;
+  text-wrap: nowrap;
+}
+.box-header h2 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 40px;
+  text-wrap: nowrap;
+}
+.box-header p {
+  margin-top: 15px;
+  text-align: center;
+  text-wrap: nowrap;
+}
+.box-header button {
+  margin-top: 20px;
+}
+
+.body-head {
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+  color: rgb(50, 40, 90);
+}
+.body-head h3 {
+  margin-top: 10px;
+  font-family: "Comforter";
+}
+
+.body-info {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+}
+.body-info h3 {
+  color: rgb(50, 40, 90);
+  margin-bottom: 30px;
+}
+.body-info .info {
+  display: flex;
+  flex-direction: row;
+}
+.body-info .info .body-text {
+  margin-left: 2%;
+  color: rgb(50, 40, 90);
+}
+.body-info .info .body-text h4 {
+  margin-top: 10px;
+}
+.body-info .info .body-text p {
+  margin-top: 10px;
+}
+.body-info .body-box-1 {
+  display: flex;
+  flex-direction: column;
+}
+.body-info .body-box-2 {
+  display: flex;
+  flex-direction: column;
+}
+.body-info .body-box-2 .pictures-1 {
+  margin-top: 10px;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+.body-info .body-box-2 .pictures-1 .big-box-1 {
+  margin-left: 20px;
+  width: 260px;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(https://static.1000.menu/img/content-v2/84/14/37174/salat-s-kalmarami-ogurcom-syrom-i-bolgarskim-percem_1639890854_16_max.jpg);
+  border-radius: 10px;
+}
+.body-info .body-box-2 .pictures-1 .small-box-1 {
+  margin-left: 10px;
+  width: 210px;
+  height: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(https://static.nv.ua/shared/system/MediaPhoto/images/000/051/607/original/6569aa2ccdf3aa3800236249c2e2ee1c.png?q=85&stamp=20200803160720&f=jpg);
+  border-radius: 10px;
+}
+.body-info .body-box-2 .pictures-2 {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.body-info .body-box-2 .pictures-2 .big-box-2 {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 360px;
+  height: 260px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_65c4dc1f69874d1277e47b3d_65c4dc9494bf453bab319b07/scale_1200);
+  border-radius: 10px;
+}
+.body-info .body-box-2 .pictures-2 .small-box-2 {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 200px;
+  height: 220px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(https://3.bp.blogspot.com/-WWE_-rlwmvc/UX-yruuhEeI/AAAAAAAAA9c/HNIfD1nKK7w/s1600/100.jpg);
+  border-radius: 10px;
+}
+
+@media (max-width: 990px) {
+  .body-info {
+    flex-direction: column;
+  }
+  .body-box-1 {
+    width: 100%;
+  }
+  div.box-header h3 {
+    font-family: "Comforter";
+    font-size: 25px;
+    text-wrap: nowrap;
+  }
+  div.box-header h2 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
+    text-wrap: nowrap;
+  }
+  div.box-header p {
+    font-size: 12px;
+    margin-top: 15px;
+    text-align: center;
+    text-wrap: nowrap;
+  }
+  .image {
+    width: 40px;
+    height: 40px;
+  }
+  .body-head h2 {
+    font-size: 18px;
+  }
+  .body-part h2 {
+    font-size: 14px;
+  }
+  .menu-text h4 {
+    font-size: 14px;
+  }
+  .menu-text p {
+    font-size: 10px;
+  }
+  .menu-1 {
+    margin-left: 8px;
+  }
+  .menu-2 {
+    margin-right: 8px;
+  }
+  .middle-nav button {
+    font-size: 14px;
+  }
+  .box-video {
+    flex-direction: column;
+  }
+}
+@media (min-width: 990px) {
+  div.box-header h3 {
+    font-family: "Comforter";
+    font-size: 35px;
+    text-wrap: nowrap;
+  }
+  div.box-header h2 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+    text-wrap: nowrap;
+  }
+  div.box-header p {
+    margin-top: 15px;
+    text-align: center;
+    text-wrap: nowrap;
+  }
+  .image {
+    width: 60px;
+    height: 60px;
+  }
+  .box-video {
+    flex-direction: row;
+  }
+}
+@media (max-width: 1200px) {
+  div.box-header {
+    align-self: center;
+  }
+  .part-main {
+    align-items: center;
+    flex-direction: column;
+  }
+  .part {
+    width: 40vw;
+  }
+  .middle-text h2 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .part-main {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .part {
+    width: 18vw;
+  }
+}
+.background-body {
+  width: 100%;
+  height: 120vh;
+  background-color: rgb(245, 245, 245);
+}
+
+.body-part {
+  margin-top: 100px;
+  width: 90%;
+}
+.body-part .btn {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+.body-part .part-main {
+  display: flex;
+}
+.body-part h2 {
+  margin-bottom: 40px;
+  text-align: center;
+  color: rgb(50, 40, 90);
+}
+.body-part .part-row {
+  margin-top: 20px;
+  display: flex;
+}
+.body-part .part {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 280px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+.body-part .part h3, .body-part .part p {
+  text-align: center;
+  color: rgb(50, 40, 90);
+}
+.body-part .part a {
+  color: rgb(120, 200, 90);
+}
+
+.middle-background {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(https://t3.ftcdn.net/jpg/03/32/24/92/360_F_332249282_aicKD4ZlPqVTg2PvbZtDGP5RTzU6cXj3.jpg);
+}
+.middle-background .middle-text {
+  border-radius: 5px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  text-align: center;
+  text-wrap: nowrap;
+}
+.middle-background .middle-text h2 {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: rgb(255, 255, 255);
+}
+.middle-background .middle-box {
+  width: 100%;
+  min-height: 50vh;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.middle-background .middle-box .middle-nav {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  text-wrap: nowrap;
+}
+.middle-background .middle-box .middle-nav button {
+  border: none;
+  background-color: transparent;
+  color: rgb(50, 40, 90);
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.middle-background .middle-box .middle-menu {
+  border-top: 1px solid rgba(180, 180, 180, 0.5);
+  margin-top: 20px;
+  padding-top: 40px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.middle-background .middle-box .menu-part {
+  min-width: 40%;
+  display: flex;
+  flex-direction: row;
+}
+.middle-background .middle-box .menu-part .menu-text {
+  margin-left: 5%;
+  color: rgb(50, 40, 90);
+}
+.middle-background .middle-box .menu-part img {
+  border-radius: 10px;
+}
+.middle-background .middle-box .menu-1, .middle-background .middle-box .menu-2 {
+  display: flex;
+  flex-direction: column;
+  min-height: 40%;
+}
+
+.box-video {
+  min-width: 50%;
+  display: flex;
+}
+
+.block-1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 400px;
+}
+.block-1 iframe {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+
+.block-2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
+}
+.block-2 h1 {
+  margin: 20px;
+  margin-top: 40px;
+  font-size: 28px;
+  color: rgb(50, 40, 90);
+}
+.block-2 p {
+  margin: 20px;
+  font-size: 18px;
+  color: rgb(50, 40, 90);
+}
+.block-2 .btn-order {
+  align-self: center;
+  margin-top: auto;
+}/*# sourceMappingURL=restaurant.css.map */
